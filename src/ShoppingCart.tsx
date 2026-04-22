@@ -1,3 +1,7 @@
+import { useEffect, useState } from "react";
+import {fetchProducts} from './api'
+import { type Product } from "./types";
+
 /*
  * Shopping Cart Challenge
  *
@@ -9,11 +13,20 @@
  *
  * 3. Provide a way for the user to add products to the cart.
  *
- * 4. Display the current cart contents, including each item's name, quantity,
- *    and per-item subtotal.
+ * 4. Display the current cart contents, including each item's name, price
  *
  * 5. Display the total cost of all items in the cart.
  */
+
 export default function ShoppingCart() {
-  return <div></div>;
+
+  useEffect(() => {
+    // TODO: fetch products using fetchProducts() and store in state
+  }, [])
+
+  return <div>
+    {/* TODO: render product list with an "Add to cart" button for each */}
+    {/* TODO: render cart contents */}
+    {/* TODO: render cart total */}
+  </div>;
 }
